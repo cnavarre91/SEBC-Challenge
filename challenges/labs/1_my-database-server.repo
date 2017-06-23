@@ -1,0 +1,8 @@
+# MariaDB 10.2 RedHat repository list - created 2017-06-23 07:12 UTC
+# http://downloads.mariadb.org/mariadb/repositories/
+[mariadb]
+name = MariaDB
+baseurl = http://yum.mariadb.org/5.5/rhel7-ppc64/
+gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
+gpgcheck=1
+
