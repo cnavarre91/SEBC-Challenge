@@ -1,0 +1,10 @@
+## HDFS
+[root@ip-172-31-24-68 ~]# hdfs dfs -ls /user
+Found 7 items
+drwxrwxrwx   - haley  haley           0 2017-06-23 04:37 /user/haley
+drwxrwxrwx   - mapred hadoop          0 2017-06-23 04:25 /user/history
+drwxrwxr-t   - hive   hive            0 2017-06-23 04:26 /user/hive
+drwxrwxr-x   - hue    hue             0 2017-06-23 04:26 /user/hue
+drwxrwxr-x   - oozie  oozie           0 2017-06-23 04:27 /user/oozie
+drwxrwxrwx   - saturn saturn          0 2017-06-23 04:37 /user/saturn
+drwxr-x--x   - spark  spark           0 2017-06-23 04:25 /user/spark
