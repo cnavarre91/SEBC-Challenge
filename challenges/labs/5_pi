@@ -1,0 +1,99 @@
+[root@ip-172-31-24-68 ~]# time hadoop jar /opt/cloudera/parcels/CDH-5.9.2-1.cdh5.9.2.p0.3/lib/hadoop-mapreduce/hadoop-mapreduce-examples.jar  pi 15 100
+Number of Maps  = 15
+Samples per Map = 100
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Wrote input for Map #10
+Wrote input for Map #11
+Wrote input for Map #12
+Wrote input for Map #13
+Wrote input for Map #14
+Starting Job
+17/06/23 05:37:11 INFO client.RMProxy: Connecting to ResourceManager at ip-172-31-18-168.eu-west-1.compute.internal/172.31.18.168:8032
+17/06/23 05:37:11 INFO hdfs.DFSClient: Created token for haley: HDFS_DELEGATION_TOKEN owner=haley@CNAVARRE.PA, renewer=yarn, realUser=, issueDate=1498210631293, maxDate=1498815431293, sequenceNumber=2, masterKeyId=2 on 172.31.18.168:8020
+17/06/23 05:37:11 INFO security.TokenCache: Got dt for hdfs://ip-172-31-18-168.eu-west-1.compute.internal:8020; Kind: HDFS_DELEGATION_TOKEN, Service: 172.31.18.168:8020, Ident: (token for haley: HDFS_DELEGATION_TOKEN owner=haley@CNAVARRE.PA, renewer=yarn, realUser=, issueDate=1498210631293, maxDate=1498815431293, sequenceNumber=2, masterKeyId=2)
+17/06/23 05:37:11 INFO input.FileInputFormat: Total input paths to process : 15
+17/06/23 05:37:11 INFO mapreduce.JobSubmitter: number of splits:15
+17/06/23 05:37:11 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1498210021526_0002
+17/06/23 05:37:11 INFO mapreduce.JobSubmitter: Kind: HDFS_DELEGATION_TOKEN, Service: 172.31.18.168:8020, Ident: (token for haley: HDFS_DELEGATION_TOKEN owner=haley@CNAVARRE.PA, renewer=yarn, realUser=, issueDate=1498210631293, maxDate=1498815431293, sequenceNumber=2, masterKeyId=2)
+17/06/23 05:37:12 INFO impl.YarnClientImpl: Submitted application application_1498210021526_0002
+17/06/23 05:37:12 INFO mapreduce.Job: The url to track the job: http://ip-172-31-18-168.eu-west-1.compute.internal:8088/proxy/application_1498210021526_0002/
+17/06/23 05:37:12 INFO mapreduce.Job: Running job: job_1498210021526_0002
+17/06/23 05:37:20 INFO mapreduce.Job: Job job_1498210021526_0002 running in uber mode : false
+17/06/23 05:37:20 INFO mapreduce.Job:  map 0% reduce 0%
+17/06/23 05:37:28 INFO mapreduce.Job:  map 13% reduce 0%
+17/06/23 05:37:29 INFO mapreduce.Job:  map 20% reduce 0%
+17/06/23 05:37:35 INFO mapreduce.Job:  map 93% reduce 0%
+17/06/23 05:37:36 INFO mapreduce.Job:  map 100% reduce 0%
+17/06/23 05:37:41 INFO mapreduce.Job:  map 100% reduce 100%
+17/06/23 05:37:41 INFO mapreduce.Job: Job job_1498210021526_0002 completed successfully
+17/06/23 05:37:41 INFO mapreduce.Job: Counters: 49
+        File System Counters
+                FILE: Number of bytes read=105
+                FILE: Number of bytes written=2000213
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=4490
+                HDFS: Number of bytes written=215
+                HDFS: Number of read operations=63
+                HDFS: Number of large read operations=0
+                HDFS: Number of write operations=3
+        Job Counters
+                Launched map tasks=15
+                Launched reduce tasks=1
+                Data-local map tasks=15
+                Total time spent by all maps in occupied slots (ms)=178475
+                Total time spent by all reduces in occupied slots (ms)=3354
+                Total time spent by all map tasks (ms)=178475
+                Total time spent by all reduce tasks (ms)=3354
+                Total vcore-seconds taken by all map tasks=178475
+                Total vcore-seconds taken by all reduce tasks=3354
+                Total megabyte-seconds taken by all map tasks=182758400
+                Total megabyte-seconds taken by all reduce tasks=3434496
+        Map-Reduce Framework
+                Map input records=15
+                Map output records=30
+                Map output bytes=270
+                Map output materialized bytes=510
+                Input split bytes=2720
+                Combine input records=0
+                Combine output records=0
+                Reduce input groups=2
+                Reduce shuffle bytes=510
+                Reduce input records=30
+                Reduce output records=0
+                Spilled Records=60
+                Shuffled Maps =15
+                Failed Shuffles=0
+                Merged Map outputs=15
+                GC time elapsed (ms)=981
+                CPU time spent (ms)=9510
+                Physical memory (bytes) snapshot=7131779072
+                Virtual memory (bytes) snapshot=25198735360
+                Total committed heap usage (bytes)=8190951424
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+        File Input Format Counters
+                Bytes Read=1770
+        File Output Format Counters
+                Bytes Written=97
+Job Finished in 30.505 seconds
+Estimated value of Pi is 3.15200000000000000000
+
+real    0m33.507s
+user    0m5.643s
+sys     0m0.223s
