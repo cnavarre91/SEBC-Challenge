@@ -1,0 +1,41 @@
+
+## Hostname Database Server:
+
+MariaDB [(none)]> show variables like '%hostname%';
++---------------+--------------------------------------------+
+| Variable_name | Value                                      |
++---------------+--------------------------------------------+
+| hostname      | ip-172-31-26-40.eu-west-1.compute.internal |
++---------------+--------------------------------------------+
+
+
+## Database version:
+MariaDB [(none)]> show variables like '%version%';
++-------------------------+---------------------+
+| Variable_name           | Value               |
++-------------------------+---------------------+
+| innodb_version          | 5.5.49-MariaDB-38.0 |
+| protocol_version        | 10                  |
+| slave_type_conversions  |                     |
+| version                 | 5.5.52-MariaDB      |
+| version_comment         | MariaDB Server      |
+| version_compile_machine | x86_64              |
+| version_compile_os      | Linux               |
++-------------------------+---------------------+
+
+
+## Databases:
+
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| hive               |
+| hue                |
+| mysql              |
+| oozie              |
+| performance_schema |
+| rman               |
+| sentry             |
++--------------------+
