@@ -19,7 +19,6 @@
     * /dev/xvda2       70G  1.9G   69G   3% /
 
 ## Yum repolist enabled:  
-* [ec2-user@ip-172-31-25-246 ~]$ yum repolist enabled
 * [root@ip-172-31-25-246 ec2-user]# yum repolist enabled
 * Loaded plugins: amazon-id, rhui-lb, search-disabled-repos
 * repo id                                                         repo name                                                                      status
