@@ -1,11 +1,4 @@
 ##Teragen Command
-
-[saturn@ip-172-31-24-68 ~]$ time hadoop jar /opt/cloudera/parcels/CDH-5.9.0-1.cdh5.9.0.p0.23/lib/hadoop-mapreduce/hadoop-mapreduce-examples.jar teragen -Ddfs.block.size=33554432 -Dmapreduce.map.log.level=INFO -Dmapreduce.reduce.log.level=INFO -Dyarn.app.mapreduce.am.log.level=INFO -Dmapreduce.map.memory.mb=1024 -Dmapred.map.tasks=12 65536000 /user/saturn/tgen/tgen12_file
-Not a valid JAR: /opt/cloudera/parcels/CDH-5.9.0-1.cdh5.9.0.p0.23/lib/hadoop-mapreduce/hadoop-mapreduce-examples.jar
-
-real    0m0.160s
-user    0m0.192s
-sys     0m0.044s
 [saturn@ip-172-31-24-68 ~]$ time hadoop jar /opt/cloudera/parcels/CDH-5.9.2-1.cdh5.9.2.p0.3/lib/hadoop-mapreduce/hadoop-mapreduce-examples.jar teragen -Ddfs.block.size=33554432 -Dmapreduce.map.log.level=INFO -Dmapreduce.reduce.log.level=INFO -Dyarn.app.mapreduce.am.log.level=INFO -Dmapreduce.map.memory.mb=1024 -Dmapred.map.tasks=12 65536000 /user/saturn/tgen/tgen12_file
 17/06/23 04:50:10 INFO client.RMProxy: Connecting to ResourceManager at ip-172-31-18-168.eu-west-1.compute.internal/172.31.18.168:8032
 17/06/23 04:50:11 INFO terasort.TeraSort: Generating 65536000 using 12
